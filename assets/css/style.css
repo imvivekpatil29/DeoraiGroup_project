@@ -1,0 +1,222 @@
+/*Import Global Compulsory CSS Files*/
+
+@import url(custom.css);
+
+/*Import CSS Plugins*/
+
+@import url(plugins/style-switcher.css);
+* {
+    border-radius: 0;
+}
+
+
+/* Apply styles to all elements */
+
+
+/* Apply styles to the entire webpage */
+
+body {
+    border-radius: 10px;
+    border: 3px solid #0b8286;
+    box-sizing: border-box;
+    /* Ensure padding and border are included in the element's total width and height */
+    padding: 10px;
+    /* Adjust padding to avoid content being cut off by border-radius */
+    margin: 0;
+    /* Remove default margin */
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #2c2b2b;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('../img/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.right-sidebar-icon {
+    float: right;
+    font-size: 24px;
+    padding: 15px;
+    display: flex;
+    align-items: right;
+}
+
+
+/* The Modal (background) */
+
+
+/* Modal */
+
+.modal {
+    height: 90%;
+    width: 300px;
+    /* Adjust width as needed */
+    overflow: auto;
+    background-color: rgb(233, 251, 239);
+    box-shadow: 2px 0 5px rgba(248, 26, 5, 0.5);
+    /* Position on the left side */
+    transition: 0.3s;
+    padding: 20px;
+    margin: 20px auto0px;
+}
+
+.modal-content {
+    padding: 20px;
+    background-color: rgb(251, 247, 247);
+    border-left: 2px solid #08e7f3;
+    /* Left border */
+    border-right: 2px solid #06fafa;
+    /* Right border */
+}
+
+.open-icon {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 30px;
+    z-index: 9999;
+}
+
+.close {
+    font-size: 25px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.modal-content li {
+    margin: 30px;
+}
+
+
+/* Ensure that the navbar brand and the icon are vertically aligned */
+
+body.header-fixed-space {
+    padding-top: 94px;
+}
+
+body.header-fixed-space-v2 {
+    padding-top: 135px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* Style the login form */
+
+.login-form {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+@media (max-width: 991px) {
+    body.header-fixed-space,
+    body.header-fixed-space-v2 {
+        padding-top: 0;
+    }
+}
+
+p,
+li,
+li a,
+label {
+    color: #555;
+}
+
+a {
+    color: #72c02c;
+    text-decoration: none;
+}
+
+a,
+a:focus,
+a:hover,
+a:active,
+button,
+button:hover {
+    outline: 0 !important;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #72c02c;
+    text-decoration: underline;
+}
+
+
+/*Boxed Layout
+------------------------------------*/
+
+.wrapper {
+    background: #fbfafa;
+}
+
+.boxed-layout {
+    padding: 0x;
+    box-shadow: 0 0 5px #ccc;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background: url(../img/machines/3.jpg) repeat;
+}
+
+
+/*Hiding arrows for select field in IE*/
+
+select::-ms-expand {
+    display: none;
+}
